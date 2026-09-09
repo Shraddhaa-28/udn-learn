@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UDN Cluster lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600;800&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/app.css" />
+  <link rel="stylesheet" href="assets/lab.css" />
+</head>
+<body class="lab-page">
+  <div class="app">
+    <header class="top">
+      <div class="top-left">
+        <div class="brand">
+          <span class="mark"></span>
+          <div>
+            <strong>UDN Cluster lab</strong>
+            <span>Your test cluster · steps + docs</span>
+          </div>
+        </div>
+        <a class="home-link" href="index.html">Home</a>
+      </div>
+      <div class="top-meta">
+        <span id="progress-label">Lab 00</span>
+        <div class="bar"><i id="progress-bar"></i></div>
+      </div>
+    </header>
+
+    <nav class="sessions" id="task-nav" aria-label="Labs"></nav>
+
+    <main class="guide">
+      <p class="banner">Run every command on <strong>your</strong> test OpenShift (OVN-Kubernetes). This page does not talk to a cluster.</p>
+      <p class="kicker" id="kicker">Lab 00</p>
+      <h1 id="title">Test cluster</h1>
+      <p class="why" id="why"></p>
+      <p class="doc-line" id="doc-line"></p>
+      <div id="steps"></div>
+      <div class="pager">
+        <button type="button" class="ghost" id="prev">Previous</button>
+        <button type="button" class="primary" id="next">Next</button>
+      </div>
+    </main>
+  </div>
+  <script src="assets/lab-guide.js"></script>
+  <script src="assets/lab.js"></script>
+</body>
+</html>

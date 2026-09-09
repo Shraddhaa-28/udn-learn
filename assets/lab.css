@@ -1,0 +1,117 @@
+.lab-page .app { min-height: 100%; }
+.guide {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 22px 80px;
+}
+.banner {
+  margin: 0 0 22px;
+  padding: 10px 14px;
+  border: 1px solid rgba(201, 168, 255, 0.28);
+  border-radius: 12px;
+  background: rgba(201, 168, 255, 0.08);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.guide h1 {
+  font-family: var(--display);
+  font-size: 32px;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+.why {
+  margin: 0 0 10px;
+  color: #d5dce7;
+  line-height: 1.55;
+  font-size: 16px;
+}
+.doc-line { margin: 0 0 22px; }
+.doc-line a {
+  color: var(--lime);
+  font: 500 13px var(--mono);
+  text-decoration: none;
+}
+.doc-line a:hover { text-decoration: underline; }
+
+.step {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  margin-bottom: 12px;
+  background: #100c16;
+}
+.step.done { border-color: rgba(201, 168, 255, 0.4); }
+.step header {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.step h2 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.35;
+  padding-top: 4px;
+}
+.tick {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 168, 255, 0.35);
+  background: transparent;
+  color: var(--lime);
+  font: 600 12px var(--mono);
+  cursor: pointer;
+}
+.step.done .tick {
+  background: var(--lime);
+  color: #111;
+  border-color: var(--lime);
+}
+.do {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.block {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0710;
+  margin-bottom: 8px;
+}
+.block-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(201, 168, 255, 0.1);
+  font: 500 10px var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.block pre {
+  margin: 0;
+  padding: 12px;
+  overflow: auto;
+  font: 12px/1.5 var(--mono);
+  color: #c9d6e6;
+  white-space: pre-wrap;
+}
+.apply-hint {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.apply-hint code { font-family: var(--mono); color: var(--lime); }
+.expect {
+  margin: 0;
+  font-size: 13px;
+  color: var(--lime-dim);
+  line-height: 1.45;
+}
+.guide .pager { margin-top: 18px; }

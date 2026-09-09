@@ -3,94 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>UDN Lab — OpenShift User Defined Networks</title>
+  <title>UDN — Classroom or Cluster</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@600;800&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/app.css" />
 </head>
-<body>
-  <div class="app">
-    <header class="top">
-      <div class="brand">
-        <span class="mark"></span>
-        <div>
-          <strong>UDN Lab</strong>
-          <span>OpenShift User Defined Networks</span>
-        </div>
-      </div>
-      <div class="top-meta">
-        <span id="progress-label">Session 01 of 10</span>
-        <div class="bar"><i id="progress-bar"></i></div>
+<body class="home-page">
+  <div class="home">
+    <header class="home-brand">
+      <span class="mark"></span>
+      <div>
+        <strong>OpenShift UDN</strong>
+        <span>Two separate things. Pick one.</span>
       </div>
     </header>
-
-    <nav class="sessions" id="session-nav" aria-label="Sessions"></nav>
-
-    <main class="layout">
-      <section class="stage-wrap">
-        <div class="stage-tools">
-          <div>
-            <p class="stage-tag">diagram</p>
-            <p class="hint" id="stage-hint">Click two pods, then send a packet.</p>
-          </div>
-          <div class="legend" id="legend"></div>
-        </div>
-        <div class="stage" id="stage" role="img" aria-label="Interactive network diagram"></div>
-        <div class="bench">
-          <article class="sheet" id="yaml-card">
-            <header>
-              <span>example CR</span>
-              <p class="hash-hint" id="yaml-hint">Lines starting with # are YAML comments. The cluster ignores them.</p>
-              <button type="button" class="tiny" id="copy-yaml">copy</button>
-            </header>
-            <pre id="yaml-view"><code># example appears here</code></pre>
-          </article>
-          <article class="sheet term" id="term-card">
-            <header>
-              <span>what actually happens</span>
-              <button type="button" class="play" id="play-demo">Play</button>
-            </header>
-            <pre id="term-out"><code>Click Play to see simulated oc output.</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <aside class="panel">
-        <p class="kicker" id="kicker">Session 01 · Story</p>
-        <h1 id="title">Why UDN exists</h1>
-        <div class="lesson" id="lesson"></div>
-        <div class="controls" id="controls"></div>
-        <div class="log" id="log" hidden></div>
-        <div class="quiz" id="quiz" hidden></div>
-        <div class="pager">
-          <button type="button" class="ghost" id="prev">Previous</button>
-          <button type="button" class="primary" id="next">Next</button>
-        </div>
-      </aside>
-    </main>
-  </div>
-
-  <div class="doubt" id="doubt">
-    <button type="button" class="doubt-tab" id="doubt-toggle" aria-expanded="false" aria-controls="doubt-pop">Ask a doubt</button>
-    <div class="doubt-pop" id="doubt-pop" hidden>
-      <header>
-        <div>
-          <span>Ask a doubt</span>
-          <p id="doubt-session">Session 01</p>
-          <p class="doubt-from">Answers from OpenShift 4.22 and OVN-Kubernetes docs</p>
-        </div>
-        <button type="button" class="doubt-x" id="doubt-close" aria-label="Close">×</button>
-      </header>
-      <div class="doubt-suggest" id="doubt-suggest"></div>
-      <div class="doubt-thread" id="doubt-thread" aria-live="polite"></div>
-      <form class="doubt-form" id="doubt-form">
-        <input id="doubt-q" type="text" autocomplete="off" placeholder="Type the part that is confusing…" />
-        <button type="submit">Ask</button>
-      </form>
+    <h1>How do you want to learn User Defined Networks?</h1>
+    <p class="home-lead">Two separate tools. The classroom is pictures and sessions. The cluster lab is steps you run on <strong>your test OpenShift</strong>.</p>
+    <div class="home-grid">
+      <a class="home-card" href="classroom.html">
+        <p class="kicker">Classroom</p>
+        <h2>Visual sessions</h2>
+        <p>Ten sessions. Click diagrams. Play fake <code>oc</code>. Quizzes. Ask a doubt. No cluster required.</p>
+        <span class="home-go">Open classroom →</span>
+      </a>
+      <a class="home-card lab" href="lab.html">
+        <p class="kicker">Cluster lab</p>
+        <h2>Do it on a test cluster</h2>
+        <p>Short steps, copy-paste <code>oc</code> / YAML, one doc link each. You execute. Check the box when it works.</p>
+        <span class="home-go">Open cluster lab →</span>
+      </a>
     </div>
   </div>
-  <script src="assets/udn-knowledge.js"></script>
-  <script src="assets/app.js"></script>
 </body>
 </html>
